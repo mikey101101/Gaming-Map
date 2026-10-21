@@ -11,3 +11,8 @@ nav ul {
     list-style: none;
     gap: 20px;
 }
+.map-node{
+    border: 1px solid blue;
+    padding: 20px 30px;
+    border-radius: 10%; 
+}
