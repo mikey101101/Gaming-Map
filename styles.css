@@ -18,3 +18,7 @@ nav ul {
     text-decoration: none;
     color : black;
 }
+.map-node:hover{
+    background-color: blue;
+    color: white;
+}
