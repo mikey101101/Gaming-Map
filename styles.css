@@ -15,4 +15,6 @@ nav ul {
     border: 1px solid blue;
     padding: 20px 30px;
     border-radius: 10%; 
+    text-decoration: none;
+    color : black;
 }
