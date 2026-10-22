@@ -2043,3 +2043,141 @@ nav ul {
 .explore-footer a:hover {
     color: #0084ff;
 }
+/* ========================================
+   GTA V - GAME IDENTITY
+   ======================================== */
+
+.gta-page {
+    --game-accent: #e58b2a;
+}
+
+
+/* GTA HEADER */
+
+.gta-hero {
+    background-color: #e58b2a;
+}
+
+
+/* SECTION ACCENTS */
+
+.gta-page .game-section-title span,
+.gta-page .wiki-section h2 span,
+.gta-page .game-data-section h2 span {
+    color: #e58b2a;
+}
+
+
+/* WHY IT MATTERS */
+
+.gta-stat-text {
+    color: #e58b2a;
+    font-weight: bold;
+}
+
+.gta-stat {
+    background-color: #e58b2a;
+}
+
+.gta-stat.freedom {
+    width: 95%;
+}
+
+.gta-stat.exploration {
+    width: 92%;
+}
+
+.gta-stat.world-scale {
+    width: 98%;
+}
+
+
+/* ARCHIVE LABELS */
+
+.gta-page .archive-label {
+    color: #e58b2a;
+}
+
+
+/* TIMELINE */
+
+.gta-page .timeline-dot {
+    background-color: #e58b2a;
+    border-color: #e58b2a;
+}
+
+
+/* NAVIGATION */
+
+.gta-page .game-page-navigation a:hover {
+    color: #e58b2a;
+}
+/* ========================================
+   TERRARIA - GAME IDENTITY
+   ======================================== */
+
+.terraria-page {
+    --game-accent: #9b59b6;
+}
+
+
+/* TERRARIA HEADER */
+
+.terraria-hero {
+    background-color: #9b59b6;
+}
+
+
+/* SECTION ACCENTS */
+
+.terraria-page .game-section-title span,
+.terraria-page .wiki-section h2 span,
+.terraria-page .game-data-section h2 span {
+    color: #9b59b6;
+}
+
+
+/* WHY IT MATTERS */
+
+.terraria-stat-text {
+    color: #9b59b6;
+    font-weight: bold;
+}
+
+.terraria-stat {
+    background-color: #9b59b6;
+}
+
+.terraria-stat.exploration {
+    width: 96%;
+}
+
+.terraria-stat.creativity {
+    width: 92%;
+}
+
+.terraria-stat.progression {
+    width: 90%;
+}
+
+
+/* ARCHIVE LABELS */
+
+.terraria-page .archive-label {
+    color: #9b59b6;
+}
+
+
+/* TIMELINE */
+
+.terraria-page .timeline-dot {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+}
+
+
+/* NAVIGATION */
+
+.terraria-page .game-page-navigation a:hover {
+    color: #9b59b6;
+}
