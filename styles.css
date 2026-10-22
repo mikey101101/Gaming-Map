@@ -1,24 +1,84 @@
 body {
     margin: 0;
 }
+
 header {
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
 }
+
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
-.map-node{
+
+.map-node {
+    position: absolute;
     border: 1px solid blue;
     padding: 20px 30px;
-    border-radius: 10%; 
+    border-radius: 10%;
     text-decoration: none;
-    color : black;
+    color: black;
 }
-.map-node:hover{
+
+.map-node:hover {
     background-color: blue;
     color: white;
+}
+.map-nodes {
+    position: relative;
+    height: 600px;
+    border: 1px solid black;
+}
+
+/* Node 1 */
+
+.explore {
+    top: 20px;
+    left: 100px;
+}
+
+.solve {
+    top: 20px;
+    left: 500px;
+}
+
+/* Node 2 */
+
+.jump {
+    top: 140px;
+    left: 180px;
+}
+
+.build {
+    top: 140px;
+    left: 600px;
+}
+
+/* Node 3 */
+
+.create {
+    top: 260px;
+    left: 390px;
+}
+
+/* Node 4 */
+
+.run {
+    top: 380px;
+    left: 120px;
+}
+
+.fight {
+    top: 380px;
+    left: 580px;
+}
+
+/* Node 5 */
+
+.survive {
+    top: 500px;
+    left: 390px;
 }
