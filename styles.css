@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    font-family: Consolas, monospace !important;
+    background-color: #f5f5f5;
+    color: #222222;
 }
 
 header {
@@ -121,4 +124,1922 @@ nav ul {
 .survival {
     top: 300px;
     left: 500px;
+}
+/* =========================
+   GENRE DETAIL PAGE
+   ========================= */
+
+.genre-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.genre-section {
+    background-color: white;
+    border: 1px solid #222222;
+    border-radius: 0;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.genre-section h2 {
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.genre-section h2::before {
+    content: "// ";
+    color: blue;
+}
+
+/* =========================
+   REPRESENTATIVE GAMES
+   ========================= */
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.game-card {
+    border: 1px solid #222222;
+    padding: 25px;
+    min-height: 170px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.game-card:hover {
+    background-color: #0084ff;
+    transform: translateY(-5px);
+}
+
+.game-card:hover,
+.game-card:hover .game-year {
+    color: white;
+}
+
+.game-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.game-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.game-year {
+    color: #0084ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* =========================
+   GENRE HEADER
+   ========================= */
+   .genre-header {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 35px;
+    border: 1px solid #222222;
+    background-color: rgb(0, 132, 255);
+   }
+   .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.info-grid .genre-section {
+    margin: 0;
+    min-height: 150px;
+}
+/* =========================
+   RELATED GENRES
+   ========================= */
+
+.related-list {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.related-list a {
+    border: 1px solid #222222;
+    padding: 15px 22px;
+    text-decoration: none;
+    color: #222222;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.related-list a:hover {
+    background-color: #0084ff;
+    color: white;
+    transform: translateX(5px);
+}
+/* Fix excessive spacing before game ccards */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+/* Keep game cards directly below the information sections */
+.game_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 18px 0 0 0;
+    padding: 0;
+}
+.related-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.related-list a:last-child {
+    grid-column: 1 / 3;
+    justify-self: center;
+}
+.game-card {
+    display: block;
+    text-decoration: none !important;
+    color: #222222 !important;
+    background-color: white;
+    border: 1px solid #222222;
+    padding: 22px;
+    transition: 0.2s;
+}
+
+.game-card p,
+.game-card h3 {
+    color: inherit;
+    text-decoration: none;
+}
+
+.game-card .game-year {
+    color: #0084ff;
+}
+
+.game-card:hover {
+    background-color: #027e21;
+    color: white !important;
+    transform: translateY(-4px);
+}
+
+.game-card:hover .game-year {
+    color: white;
+}
+/* Minecraft */ 
+.game-hero {
+    background-color: #008d1f;
+    border: 1px solid #222222;
+    padding: 35px;
+    margin: 30px 0;
+}
+
+.game-hero-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 55px;
+}
+
+.game-hero-top p {
+    margin: 0;
+}
+
+.game-hero-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.game-hero h1 {
+    font-size: 52px;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.game-tagline {
+    margin: 10px 0 0;
+}
+
+.game-hero-year {
+    font-size: 48px;
+    font-weight: bold;
+}    
+/* =========================
+   MINECRAFT - GAME DATA
+   ========================= */
+
+.game-data-section {
+    margin-top: 35px;
+}
+
+.game-data-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.game-data-section h2 span {
+    color: #5fae4e;
+}
+
+.game-data-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #222222;
+    background-color: white;
+}
+
+.data-box {
+    padding: 22px;
+    border-right: 1px solid #222222;
+}
+
+.data-box:last-child {
+    border-right: none;
+}
+
+.data-box p {
+    margin: 0 0 12px 0;
+    font-size: 11px;
+    color: #777777;
+    letter-spacing: 1px;
+}
+
+.data-box h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* =========================
+   MINECRAFT - OVERVIEW
+   ========================= */
+
+.overview-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.overview-section {
+    padding-right: 30px;
+}
+
+.overview-section h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.overview-section h2 span {
+    color: #5fae4e;
+}
+
+.overview-section p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* WHY IT MATTERS */
+
+.importance-panel {
+    border: 1px solid #222222;
+    background-color: white;
+    padding: 25px;
+}
+
+.importance-panel h2 {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 15px;
+}
+
+.stat {
+    margin-bottom: 25px;
+}
+
+.stat:last-child {
+    margin-bottom: 0;
+}
+
+.stat-heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.stat-heading span:last-child {
+    color: #5fae4e;
+    font-weight: bold;
+}
+
+
+/* STAT BARS */
+
+.stat-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e5e5;
+    border: 1px solid #222222;
+}
+
+.stat-fill {
+    height: 100%;
+    background-color: #5fae4e;
+}
+
+.stat-fill.freedom {
+    width: 96%;
+}
+
+.stat-fill.exploration {
+    width: 90%;
+}
+
+.stat-fill.creativity {
+    width: 100%;
+}
+/* =========================
+   MINECRAFT - HISTORY
+   ========================= */
+
+.wiki-section {
+    margin-top: 40px;
+}
+
+.wiki-section > h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.wiki-section > h2 span {
+    color: #5fae4e;
+}
+
+.wiki-section > p {
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    position: relative;
+}
+
+/* horizontal line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #222222;
+}
+
+.timeline-event {
+    position: relative;
+    padding-right: 25px;
+}
+
+.timeline-year {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    width: 11px;
+    height: 11px;
+    background-color: #1b6d08;
+    border: 1px solid #222222;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.timeline-event h3 {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.timeline-event p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 160px;
+}
+/* =========================
+   MINECRAFT - GAMEPLAY
+   ========================= */
+
+.gameplay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.gameplay-box {
+    position: relative;
+    background-color: white;
+    border: 1px solid #222222;
+    padding: 25px;
+    min-height: 150px;
+    transition: 0.2s;
+}
+
+.gameplay-number {
+    color: #4f9f45;
+    font-size: 12px;
+    margin: 0 0 30px 0;
+}
+
+.gameplay-box h3 {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
+
+.gameplay-box p:last-child {
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Green line at the top */
+.gameplay-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #4f9f45;
+    transition: 0.25s;
+}
+
+.gameplay-box:hover {
+    transform: translateY(-5px);
+}
+
+.gameplay-box:hover::before {
+    width: 100%;
+}
+/* =========================
+   MINECRAFT - PLAYER FREEDOM
+   ========================= */
+
+.freedom-section {
+    margin-top: 60px;
+    padding: 35px 0;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.freedom-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 35px;
+}
+
+.freedom-label span:first-child {
+    color: #4f9f45;
+    font-weight: bold;
+}
+
+.freedom-label span:last-child {
+    color: #777777;
+}
+
+.freedom-statement {
+    font-size: 38px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 0 0 35px 0;
+    max-width: 650px;
+}
+
+.freedom-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.freedom-content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+/* =========================
+   HISTORICAL SIGNIFICANCE
+   ========================= */
+
+.significance-section {
+    position: relative;
+    margin-top: 60px;
+    padding: 45px 0 55px 0;
+    overflow: hidden;
+}
+
+.significance-number {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 1;
+
+    color: #4f9f45;
+    opacity: 0.10;
+
+    pointer-events: none;
+}
+
+.significance-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.archive-label {
+    color: #4f9f45;
+    font-size: 11px !important;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.significance-content h2 {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+
+.significance-content > p:not(.archive-label) {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   GAME PAGE NAVIGATION
+   ========================= */
+
+.game-page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #222222;
+
+    padding: 25px 0 40px 0;
+    margin-top: 10px;
+}
+
+.game-page-navigation a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.game-page-navigation a:hover {
+    color: #4f9f45;
+}
+
+.game-page-navigation a:last-child {
+    text-align: right;
+}
+.game-wiki-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 35px 50px 35px;
+}
+.game-data-section {
+    margin-bottom: 50px;
+}
+
+.overview-layout {
+    margin-bottom: 60px;
+}
+
+.timeline {
+    margin-bottom: 60px;
+}
+/* =========================
+   HOME PAGE HERO
+   ========================= */
+
+.home-hero {
+    position: relative;
+    min-height: 520px;
+    margin: 30px 35px 60px 35px;
+    padding: 35px;
+
+    background-color: #0084ff;
+    border: 1px solid #222222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+
+/* TOP LABELS */
+
+.home-hero-top {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 11px;
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero-top p {
+    margin: 0;
+}
+
+
+/* MAIN CONTENT */
+
+.home-hero-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 60px;
+
+    align-items: end;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* LARGE TITLE */
+
+.home-hero-title h1 {
+    margin: 0;
+
+    font-size: 72px;
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+}
+
+.home-hero-title span {
+    color: white;
+}
+
+
+/* DESCRIPTION */
+
+.home-hero-description {
+    padding-bottom: 8px;
+}
+
+.home-hero-description p {
+    font-size: 14px;
+    line-height: 1.6;
+
+    max-width: 330px;
+    margin: 0 0 30px 0;
+}
+
+
+/* START BUTTON */
+
+.hero-button {
+    display: inline-block;
+
+    border: 1px solid #222222;
+    background-color: white;
+
+    color: #222222;
+    text-decoration: none;
+
+    padding: 14px 20px;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #222222;
+    color: white;
+
+    transform: translateX(5px);
+}
+
+
+/* BOTTOM INFORMATION */
+
+.home-hero-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero-bottom p {
+    margin: 0;
+}
+
+
+/* LARGE BACKGROUND NUMBER */
+
+.hero-index {
+    position: absolute;
+
+    right: -25px;
+    bottom: -80px;
+
+    font-size: 230px;
+    font-weight: bold;
+
+    line-height: 1;
+
+    color: white;
+    opacity: 0.08;
+
+    pointer-events: none;
+}
+/* ========================================
+   HISTORICAL GAMING MAP - HOME PAGE
+   ======================================== */
+
+.home-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 35px 60px 35px;
+}
+
+
+/* =====================
+   TOP NAVIGATION
+   ===================== */
+
+.home-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid #222222;
+
+    font-size: 11px;
+}
+
+.home-logo {
+    color: #222222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-nav-info {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* =====================
+   INTRO
+   ===================== */
+
+.map-intro {
+    padding: 55px 0 45px 0;
+}
+
+.map-status {
+    color: #0084ff;
+    font-size: 11px;
+    margin: 0 0 25px 0;
+}
+
+.map-intro h1 {
+    font-size: 62px;
+    line-height: 0.95;
+    letter-spacing: -3px;
+
+    max-width: 750px;
+    margin: 0 0 30px 0;
+}
+
+.map-intro h1 span {
+    color: #0084ff;
+}
+
+.map-description {
+    max-width: 600px;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   INTERACTIVE MECHANIC MAP
+   ======================================== */
+
+.mechanic-map {
+    position: relative;
+
+    height: 650px;
+
+    border: 1px solid #222222;
+
+    overflow: hidden;
+
+    /* subtle map grid */
+    background-color: #ffffff;
+
+    background-image:
+        linear-gradient(#eeeeee 1px, transparent 1px),
+        linear-gradient(90deg, #eeeeee 1px, transparent 1px);
+
+    background-size: 50px 50px;
+}
+
+
+/* =====================
+   INTERFACE INFORMATION
+   ===================== */
+
+.map-interface {
+    position: absolute;
+    z-index: 4;
+
+    font-size: 9px;
+    line-height: 1.7;
+
+    color: #777777;
+}
+
+.map-interface p {
+    margin: 0;
+}
+
+.map-interface-left {
+    top: 20px;
+    left: 20px;
+}
+
+.map-interface-right {
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+
+/* =====================
+   NODES
+   ===================== */
+
+.mechanic-node {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #222222;
+    text-decoration: none;
+
+    min-width: 110px;
+
+    transition: 0.2s;
+}
+
+.node-number {
+    font-size: 9px;
+    color: #777777;
+
+    margin-bottom: 7px;
+}
+
+.node-dot {
+    width: 13px;
+    height: 13px;
+
+    background-color: white;
+
+    border: 2px solid #222222;
+
+    margin-bottom: 8px;
+
+    transition: 0.2s;
+}
+
+.mechanic-node strong {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.node-description {
+    font-size: 9px;
+    line-height: 1.5;
+
+    color: #777777;
+
+    margin-top: 6px;
+
+    max-width: 150px;
+
+    opacity: 0;
+
+    transform: translateY(5px);
+
+    transition: 0.2s;
+}
+
+
+/* NODE HOVER */
+
+.mechanic-node:hover {
+    color: #0084ff;
+    transform: translateY(-4px);
+}
+
+.mechanic-node:hover .node-dot {
+    background-color: #0084ff;
+    border-color: #0084ff;
+
+    box-shadow: 0 0 0 5px rgba(0, 132, 255, 0.12);
+}
+
+.mechanic-node:hover .node-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================
+   NODE POSITIONS
+   ===================== */
+
+.node-explore {
+    top: 110px;
+    left: 44%;
+}
+
+.node-solve {
+    top: 180px;
+    right: 10%;
+}
+
+.node-jump {
+    top: 285px;
+    left: 48%;
+}
+
+.node-build {
+    top: 220px;
+    left: 12%;
+}
+
+.node-fight {
+    top: 390px;
+    right: 16%;
+}
+
+.node-run {
+    bottom: 100px;
+    left: 45%;
+}
+
+.node-survive {
+    top: 420px;
+    left: 16%;
+}
+
+
+/* =====================
+   MAP CONNECTION LINES
+   ===================== */
+
+.map-line {
+    position: absolute;
+
+    height: 1px;
+
+    background-color: #bdbdbd;
+
+    transform-origin: left center;
+
+    z-index: 1;
+}
+
+.line-one {
+    width: 270px;
+    top: 180px;
+    left: 23%;
+
+    transform: rotate(-10deg);
+}
+
+.line-two {
+    width: 300px;
+    top: 175px;
+    left: 48%;
+
+    transform: rotate(14deg);
+}
+
+.line-three {
+    width: 220px;
+    top: 320px;
+    left: 29%;
+
+    transform: rotate(-8deg);
+}
+
+.line-four {
+    width: 280px;
+    top: 330px;
+    left: 50%;
+
+    transform: rotate(18deg);
+}
+
+.line-five {
+    width: 250px;
+    top: 470px;
+    left: 28%;
+
+    transform: rotate(5deg);
+}
+
+
+/* =====================
+   CENTRE INSTRUCTION
+   ===================== */
+
+.map-instruction {
+    position: absolute;
+
+    left: 20px;
+    bottom: 70px;
+
+    font-size: 10px;
+    color: #777777;
+}
+
+.instruction-line {
+    display: block;
+
+    width: 45px;
+    height: 1px;
+
+    background-color: #0084ff;
+
+    margin-bottom: 10px;
+}
+
+.map-instruction p {
+    margin: 0;
+}
+
+
+/* =====================
+   MAP FOOTER
+   ===================== */
+
+.map-footer {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 40px;
+
+    border-top: 1px solid #222222;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 18px;
+
+    font-size: 9px;
+
+    z-index: 10;
+}
+/* =========================
+   NODE INTERACTION
+   ========================= */
+
+.node-enter {
+    display: block;
+    margin-top: 8px;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    color: #0084ff;
+
+    opacity: 0;
+    transform: translateY(5px);
+
+    transition: 0.2s;
+}
+
+.mechanic-node:hover .node-enter {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Make selected node more noticeable */
+
+.mechanic-node:hover strong {
+    color: #0084ff;
+}
+
+.mechanic-node:hover .node-number {
+    color: #0084ff;
+}
+
+
+/* Slightly enlarge the node dot */
+
+.node-dot {
+    width: 12px;
+    height: 12px;
+}
+
+.mechanic-node:hover .node-dot {
+    transform: scale(1.25);
+}
+.node-explore .node-dot {
+    background-color: #0084ff;
+    border-color: #0084ff;
+}
+
+.node-explore strong {
+    color: #0084ff;
+}
+/* ========================================
+   HOME - ABOUT SECTION
+   ======================================== */
+
+.home-about {
+    margin-top: 70px;
+    padding: 45px 0 65px 0;
+    border-top: 1px solid #222222;
+}
+
+.home-section-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 45px;
+
+    font-size: 11px;
+    color: #0084ff;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-title h2 {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.about-title h2 span {
+    color: #0084ff;
+}
+
+.about-description {
+    padding-top: 5px;
+}
+
+.about-description p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0 0 18px 0;
+}
+
+.about-mechanics {
+    color: #0084ff;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   HOME - ARCHIVE
+   ======================================== */
+
+.featured-archive {
+    margin-top: 20px;
+    padding: 50px 0 70px 0;
+    border-top: 1px solid #222222;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+
+/* ARCHIVE CARDS */
+
+.archive-entry {
+    min-height: 280px;
+    padding: 22px;
+
+    border: 1px solid #222222;
+    background-color: white;
+
+    color: #222222 !important;
+    text-decoration: none !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+/* TOP INFORMATION */
+
+.archive-entry-top {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 9px;
+    color: #777777;
+}
+
+
+/* GAME INFORMATION */
+
+.archive-entry-content {
+    margin-top: auto;
+    margin-bottom: 35px;
+}
+
+.archive-type {
+    margin: 0 0 12px 0;
+
+    font-size: 9px;
+    color: #777777;
+}
+
+.archive-entry h3 {
+    margin: 0 0 18px 0;
+
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -1px;
+
+    color: #222222;
+}
+
+.archive-summary {
+    margin: 0;
+
+    max-width: 250px;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    color: #555555;
+}
+
+
+/* VIEW ENTRY */
+
+.archive-open {
+    font-size: 10px;
+    font-weight: bold;
+
+    color: #0084ff;
+
+    transition: 0.2s;
+}
+
+
+/* CARD HOVER */
+
+.archive-entry:hover {
+    transform: translateY(-6px);
+}
+
+.archive-entry:hover .archive-open {
+    transform: translateX(5px);
+}
+
+
+/* INDIVIDUAL GAME ACCENTS */
+
+.minecraft-entry::before,
+.gta-entry::before,
+.terraria-entry::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+}
+
+.minecraft-entry::before {
+    background-color: #4f9f45;
+}
+
+.gta-entry::before {
+    background-color: #0084ff;
+}
+
+.terraria-entry::before {
+    background-color: #c8843f;
+}
+
+
+/* ========================================
+   HOME FOOTER
+   ======================================== */
+
+.home-footer {
+    border-top: 1px solid #222222;
+
+    padding: 22px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 9px;
+    color: #777777;
+}
+/* ========================================
+   EXPLORE PAGE
+   ======================================== */
+
+.explore-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 35px 60px 35px;
+}
+
+
+/* ========================================
+   EXPLORE NAVIGATION
+   ======================================== */
+
+.explore-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid #222222;
+
+    font-size: 11px;
+}
+
+.explore-nav a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.explore-nav a:hover {
+    color: #0084ff;
+}
+
+.explore-nav-info {
+    display: flex;
+    gap: 18px;
+}
+
+.explore-nav-info span:last-child {
+    color: #0084ff;
+}
+
+
+/* ========================================
+   EXPLORE INTRO
+   ======================================== */
+
+.explore-intro {
+    padding: 55px 0 50px 0;
+}
+
+.explore-intro-label {
+    color: #0084ff;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+.explore-intro h1 {
+    margin: 0;
+
+    font-size: 64px;
+    line-height: 0.95;
+    letter-spacing: -3px;
+}
+
+.explore-intro h1 span {
+    color: #0084ff;
+}
+
+.explore-intro-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 35px;
+}
+
+.explore-intro-bottom > p {
+    max-width: 520px;
+
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* INTRO STATS */
+
+.explore-stats {
+    display: flex;
+    border: 1px solid #222222;
+    background-color: white;
+}
+
+.explore-stats div {
+    min-width: 110px;
+    padding: 15px 18px;
+}
+
+.explore-stats div + div {
+    border-left: 1px solid #222222;
+}
+
+.explore-stats span {
+    display: block;
+
+    color: #777777;
+
+    font-size: 8px;
+
+    margin-bottom: 8px;
+}
+
+.explore-stats strong {
+    font-size: 14px;
+}
+
+
+/* ========================================
+   GENRE MAP
+   ======================================== */
+
+.genre-map {
+    position: relative;
+
+    height: 610px;
+
+    border: 1px solid #222222;
+
+    overflow: hidden;
+
+    background-color: white;
+
+    background-image:
+        linear-gradient(#eeeeee 1px, transparent 1px),
+        linear-gradient(90deg, #eeeeee 1px, transparent 1px);
+
+    background-size: 50px 50px;
+}
+
+
+/* ========================================
+   GENRE MAP INTERFACE
+   ======================================== */
+
+.genre-map-interface {
+    position: absolute;
+    z-index: 5;
+
+    top: 20px;
+
+    color: #777777;
+
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+.genre-map-interface p {
+    margin: 0;
+}
+
+.genre-interface-left {
+    left: 20px;
+}
+
+.genre-interface-right {
+    right: 20px;
+    text-align: right;
+}
+
+
+/* ========================================
+   GENRE NODES
+   ======================================== */
+
+.genre-map-node {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 130px;
+
+    color: #222222;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.genre-number {
+    color: #777777;
+
+    font-size: 9px;
+
+    margin-bottom: 7px;
+}
+
+.genre-dot {
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid #222222;
+
+    background-color: white;
+
+    margin-bottom: 8px;
+
+    transition: 0.2s;
+}
+
+.genre-map-node strong {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.genre-node-description {
+    max-width: 170px;
+
+    margin-top: 7px;
+
+    color: #777777;
+
+    font-size: 9px;
+    line-height: 1.5;
+
+    opacity: 0;
+
+    transform: translateY(5px);
+
+    transition: 0.2s;
+}
+
+
+/* NODE HOVER */
+
+.genre-map-node:hover {
+    color: #0084ff;
+
+    transform: translateY(-4px);
+}
+
+.genre-map-node:hover .genre-number {
+    color: #0084ff;
+}
+
+.genre-map-node:hover .genre-dot {
+    background-color: #0084ff;
+    border-color: #0084ff;
+
+    transform: scale(1.2);
+
+    box-shadow:
+        0 0 0 5px rgba(0, 132, 255, 0.12);
+}
+
+.genre-map-node:hover .genre-node-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   GENRE NODE POSITIONS
+   ======================================== */
+
+.genre-adventure {
+    top: 125px;
+    left: 43%;
+}
+
+.genre-walking {
+    top: 250px;
+    left: 12%;
+}
+
+.genre-open-world {
+    top: 235px;
+    right: 10%;
+}
+
+.genre-sandbox {
+    top: 405px;
+    left: 30%;
+}
+
+.genre-survival {
+    top: 405px;
+    right: 26%;
+}
+
+
+/* ========================================
+   SANDBOX - CURRENT AVAILABLE ROUTE
+   ======================================== */
+
+.genre-sandbox .genre-dot {
+    background-color: #0084ff;
+    border-color: #0084ff;
+}
+
+.genre-sandbox strong {
+    color: #0084ff;
+}
+
+.genre-enter {
+    margin-top: 9px;
+
+    color: #0084ff;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    opacity: 0;
+
+    transform: translateY(5px);
+
+    transition: 0.2s;
+}
+
+.genre-sandbox:hover .genre-enter {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   GENRE CONNECTION LINES
+   ======================================== */
+
+.genre-line {
+    position: absolute;
+    z-index: 1;
+
+    height: 1px;
+
+    background-color: #bdbdbd;
+
+    transform-origin: left center;
+}
+
+.genre-line-one {
+    width: 280px;
+
+    top: 185px;
+    left: 20%;
+
+    transform: rotate(-12deg);
+}
+
+.genre-line-two {
+    width: 300px;
+
+    top: 180px;
+    left: 49%;
+
+    transform: rotate(14deg);
+}
+
+.genre-line-three {
+    width: 245px;
+
+    top: 330px;
+    left: 23%;
+
+    transform: rotate(27deg);
+}
+
+.genre-line-four {
+    width: 260px;
+
+    top: 335px;
+    left: 52%;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ========================================
+   MAP INSTRUCTION
+   ======================================== */
+
+.genre-map-instruction {
+    position: absolute;
+
+    left: 20px;
+    bottom: 70px;
+
+    color: #777777;
+
+    font-size: 9px;
+}
+
+.genre-map-instruction > span {
+    display: block;
+
+    width: 40px;
+    height: 1px;
+
+    margin-bottom: 10px;
+
+    background-color: #0084ff;
+}
+
+.genre-map-instruction p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   GENRE MAP FOOTER
+   ======================================== */
+
+.genre-map-footer {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 40px;
+
+    padding: 0 18px;
+
+    border-top: 1px solid #222222;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 9px;
+
+    z-index: 10;
+}
+
+
+/* ========================================
+   ABOUT EXPLORE PATH
+   ======================================== */
+
+.explore-about {
+    margin-top: 70px;
+
+    padding: 50px 0 70px 0;
+
+    border-top: 1px solid #222222;
+}
+
+.explore-section-label {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+
+    color: #0084ff;
+
+    font-size: 11px;
+}
+
+.explore-about-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+}
+
+.explore-about-layout h2 {
+    margin: 0;
+
+    font-size: 42px;
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.explore-about-layout h2 span {
+    color: #0084ff;
+}
+
+.explore-about-layout > div p {
+    margin: 0 0 18px 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   EXPLORE FOOTER
+   ======================================== */
+
+.explore-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #222222;
+
+    padding: 22px 0;
+
+    color: #777777;
+
+    font-size: 9px;
+}
+
+.explore-footer a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.explore-footer a:hover {
+    color: #0084ff;
 }
